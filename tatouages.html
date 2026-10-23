@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tatouages · Candy p.ink</title>
+  <meta name="description" content="La galerie Candy p.ink : fine line, floral, minimaliste, lettrage et ornemental. Filtre par style.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="fx-veil" aria-hidden="true"><img src="logo.png" alt=""></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Candy p.ink, accueil"><img src="logo.png" alt="Candy p.ink"></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="tatouages.html" aria-current="page">Tatouages</a>
+      <a href="flashs.html">Flashs</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="contact.html">Prendre rendez-vous</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="spark" style="top:18%;right:8%;"></span>
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Accueil</a> / Tatouages</p>
+      <span class="kicker">La galerie</span>
+      <h1>Les <span class="script">réalisations</span></h1>
+      <p class="lead">Fine line, floral, minimaliste, lettrage et ornemental. Filtre par style et clique sur une image pour l'agrandir.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filtrer par style">
+        <button type="button" data-filter="all" aria-pressed="true">Tout voir</button>
+        <button type="button" data-filter="fine" aria-pressed="false">Fine line</button>
+        <button type="button" data-filter="floral" aria-pressed="false">Floral</button>
+        <button type="button" data-filter="minimal" aria-pressed="false">Minimaliste</button>
+        <button type="button" data-filter="lettrage" aria-pressed="false">Lettrage</button>
+        <button type="button" data-filter="ornemental" aria-pressed="false">Ornemental</button>
+      </div>
+      <p id="count" class="lead" style="margin-bottom:1.5rem;font-size:0.95rem;"></p>
+
+      <div class="grid-3" id="gallery">
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r01.jpg" alt="Lettrage cursif « Aheer » sur l’avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Aheer</h3><p class="work-meta"><span>Lettrage</span> Avant-bras</p></div>
+        </article>
+        <article class="work" data-style="fine floral">
+          <div class="work-media"><img src="./r02.jpg" alt="Petit trèfle fine line sur le poignet" loading="lazy"></div>
+          <div class="work-body"><h3>Trèfle délicat</h3><p class="work-meta"><span>Fine line</span> Poignet</p></div>
+        </article>
+        <article class="work" data-style="fine">
+          <div class="work-media"><img src="./r03.jpg" alt="Petite ancre fine line sur l’avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Ancre</h3><p class="work-meta"><span>Fine line</span> Avant-bras</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r04.jpg" alt="Lettrage rouge « la vie en rose » près du coude" loading="lazy"></div>
+          <div class="work-body"><h3>La vie en rose</h3><p class="work-meta"><span>Lettrage</span> Coude</p></div>
+        </article>
+        <article class="work" data-style="minimal">
+          <div class="work-media"><img src="./r05.jpg" alt="Étoile polaire minimaliste sur la cheville" loading="lazy"></div>
+          <div class="work-body"><h3>Étoile polaire</h3><p class="work-meta"><span>Minimaliste</span> Cheville</p></div>
+        </article>
+        <article class="work" data-style="fine floral">
+          <div class="work-media"><img src="./r06.jpg" alt="Petit chat fine line sur la cuisse" loading="lazy"></div>
+          <div class="work-body"><h3>Petit chat</h3><p class="work-meta"><span>Fine line</span> Cuisse</p></div>
+        </article>
+        <article class="work" data-style="fine floral">
+          <div class="work-media"><img src="./r07.jpg" alt="Deux hirondelles fine line sur l’avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Hirondelles</h3><p class="work-meta"><span>Fine line</span> Avant-bras</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r08.jpg" alt="Petit mot fine line sur l’épaule" loading="lazy"></div>
+          <div class="work-body"><h3>Mot sur l’épaule</h3><p class="work-meta"><span>Lettrage</span> Épaule</p></div>
+        </article>
+        <article class="work" data-style="minimal">
+          <div class="work-media"><img src="./r09.jpg" alt="Deux étoiles minimalistes sous la clavicule" loading="lazy"></div>
+          <div class="work-body"><h3>Duo d’étoiles</h3><p class="work-meta"><span>Minimaliste</span> Clavicule</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r10.jpg" alt="Idéogrammes fine line sur la hanche" loading="lazy"></div>
+          <div class="work-body"><h3>Amour et paix</h3><p class="work-meta"><span>Lettrage</span> Hanche</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r11.jpg" alt="Petit lettrage fin sur le poignet" loading="lazy"></div>
+          <div class="work-body"><h3>Lettrage fin</h3><p class="work-meta"><span>Lettrage</span> Poignet</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r12.jpg" alt="Initiales lettrées sur l’avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Initiales</h3><p class="work-meta"><span>Lettrage</span> Avant-bras</p></div>
+        </article>
+        <article class="work" data-style="fine floral">
+          <div class="work-media"><img src="./r13.jpg" alt="Petite fraise fine line sur la hanche" loading="lazy"></div>
+          <div class="work-body"><h3>Fraise</h3><p class="work-meta"><span>Fine line</span> Hanche</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r14.jpg" alt="Trois lignes de texte fin sur les côtes" loading="lazy"></div>
+          <div class="work-body"><h3>Trois lignes</h3><p class="work-meta"><span>Lettrage</span> Côtes</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r15.jpg" alt="Lettrage « Inohé » sur le haut du bras" loading="lazy"></div>
+          <div class="work-body"><h3>Inohé</h3><p class="work-meta"><span>Lettrage</span> Haut du bras</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r16.jpg" alt="Lettrage cursif avec date sur l’avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Lettrage daté</h3><p class="work-meta"><span>Lettrage</span> Avant-bras</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r17.jpg" alt="Deux mots en lettrage fin, hanche et avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Blessed & faith</h3><p class="work-meta"><span>Lettrage</span> Hanche</p></div>
+        </article>
+        <article class="work" data-style="lettrage">
+          <div class="work-media"><img src="./r18.jpg" alt="Lettrage « Brothers to the end » sur l’avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Brothers to the end</h3><p class="work-meta"><span>Lettrage</span> Avant-bras</p></div>
+        </article>
+        <article class="work" data-style="minimal">
+          <div class="work-media"><img src="./r19.jpg" alt="Petit mot minimaliste sur le poignet" loading="lazy"></div>
+          <div class="work-body"><h3>Petit mot</h3><p class="work-meta"><span>Minimaliste</span> Poignet</p></div>
+        </article>
+        <article class="work" data-style="ornemental">
+          <div class="work-media"><img src="./r20.jpg" alt="Couronne ornementale sur l’avant-bras" loading="lazy"></div>
+          <div class="work-body"><h3>Couronne</h3><p class="work-meta"><span>Ornemental</span> Avant-bras</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-pink cta">
+    <div class="wrap">
+      <h2>Ton tatouage sur la prochaine photo ? <span class="script">Parlons-en.</span></h2>
+      <p class="lead">Envoie ton projet, la zone et la taille approximative. Tu reçois une réponse avec les prochaines étapes.</p>
+      <div class="cta-actions">
+        <a class="btn btn-butter" href="contact.html">Prendre rendez-vous</a>
+        <a class="btn btn-white" href="flashs.html">Voir les flashs</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="logo.png" alt="Candy p.ink">
+        <p style="margin-top:1.2rem;">Tatouage fine line, floral et minimaliste à Lyon. Projets personnalisés et flashs du moment.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="tatouages.html">Tatouages</a></li>
+          <li><a href="flashs.html">Flashs</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="avis.html">Avis</a></li>
+          <li><a href="coulisses.html">Coulisses</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="https://instagram.com/barbieink.lyon" target="_blank" rel="noopener">@barbieink.lyon</a></li>
+          <li><span class="pending">Adresse à compléter</span></li>
+          <li><span class="pending">Horaires à compléter</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Candy p.ink · Lyon</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Filtre de la galerie par style
+  const buttons = document.querySelectorAll('.filters button');
+  const cards = document.querySelectorAll('#gallery .work');
+  const count = document.getElementById('count');
+
+  function applyFilter(name) {
+    let visible = 0;
+    cards.forEach((card) => {
+      const styles = card.dataset.style.split(' ');
+      const show = name === 'all' || styles.includes(name);
+      card.hidden = !show;
+      if (show) visible++;
+    });
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === name)));
+    count.textContent = visible + (visible > 1 ? ' réalisations affichées' : ' réalisation affichée');
+  }
+
+  buttons.forEach((b) => b.addEventListener('click', () => applyFilter(b.dataset.filter)));
+  applyFilter('all');
+</script>
+<script src="fx.js" defer></script>
+</body>
+</html>

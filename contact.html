@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Candy p.ink</title>
+  <meta name="description" content="Décris ton idée ou choisis un flash : tu reçois une réponse avec les prochaines étapes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="fx-veil" aria-hidden="true"><img src="logo.png" alt=""></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Candy p.ink, accueil"><img src="logo.png" alt="Candy p.ink"></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="tatouages.html">Tatouages</a>
+      <a href="flashs.html">Flashs</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-primary" href="contact.html">Prendre rendez-vous</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="spark" style="top:18%;right:9%;"></span>
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Accueil</a> / Contact</p>
+      <span class="kicker">Contact</span>
+      <h1>Parlons de <span class="script">ton projet</span></h1>
+      <p class="lead">Décris ton idée ou choisis un flash : tu reçois une réponse avec les prochaines étapes.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid-2" style="align-items:start;">
+
+      <aside>
+        <h2 style="font-size:1.9rem;">Infos pratiques</h2>
+
+        <p class="kicker" style="margin-top:1.4rem;">Instagram</p>
+        <p><a href="https://instagram.com/barbieink.lyon" target="_blank" rel="noopener" style="font-weight:700;">@barbieink.lyon</a></p>
+
+        <p class="kicker" style="margin-top:1.4rem;">Adresse</p>
+        <p><span class="pending">À compléter</span></p>
+        <p style="color:var(--muted);font-size:0.9rem;">L'adresse exacte sera affichée une fois vérifiée.</p>
+
+        <p class="kicker" style="margin-top:1.4rem;">Horaires</p>
+        <p><span class="pending">À compléter</span></p>
+
+        <p class="kicker" style="margin-top:1.4rem;">Email</p>
+        <p><span class="pending">À compléter</span></p>
+
+        <div class="note-box" style="margin-top:2rem;">
+          <h3>Bon à savoir</h3>
+          <p>Les demandes partent par message privé Instagram ou par le formulaire. Aucun paiement n'est demandé sur le site. Les tarifs et délais sont communiqués dans la réponse à ta demande.</p>
+        </div>
+      </aside>
+
+      <div class="form-shell">
+        <h2 style="font-size:1.9rem;">Ma demande</h2>
+        <p class="lead" style="margin-bottom:1.6rem;font-size:1rem;">Deux parcours : un projet à construire, ou un flash déjà repéré.</p>
+
+        <div class="toggle" role="group" aria-label="Type de demande">
+          <button type="button" id="btn-idea" aria-pressed="true">J'ai une idée</button>
+          <button type="button" id="btn-flash" aria-pressed="false">J'ai repéré un flash</button>
+        </div>
+
+        <form id="request-form" novalidate>
+          <div class="field" id="flash-field" hidden>
+            <label for="flash">Numéro du flash</label>
+            <select id="flash" name="flash">
+              <option value="">Choisis un flash</option>
+              <option value="01">N°01 · Papillon</option>
+              <option value="02">N°02 · Fleur</option>
+              <option value="03">N°03 · Lune</option>
+              <option value="04">N°04 · Cœur</option>
+              <option value="05">N°05 · Nœud</option>
+              <option value="06">N°06 · Étoile</option>
+              <option value="07">N°07 · Cerises</option>
+              <option value="08">N°08 · Plume</option>
+              <option value="09">N°09 · Soleil</option>
+              <option value="autre">Autre / je ne sais pas encore</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="project">Ton projet</label>
+            <textarea id="project" name="project" placeholder="Décris le motif que tu as en tête, l'ambiance, les éléments importants…"></textarea>
+            <small>Plus c'est précis, plus la réponse peut l'être aussi.</small>
+          </div>
+
+          <div class="row-2">
+            <div class="field">
+              <label for="zone">Zone du corps</label>
+              <select id="zone" name="zone">
+                <option value="">Choisis une zone</option>
+                <option>Avant-bras</option>
+                <option>Poignet</option>
+                <option>Doigt</option>
+                <option>Épaule</option>
+                <option>Clavicule</option>
+                <option>Côtes</option>
+                <option>Dos</option>
+                <option>Nuque</option>
+                <option>Cheville</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="size">Taille approximative</label>
+              <select id="size" name="size">
+                <option value="">Choisis une taille</option>
+                <option>Très petit (moins de 3 cm)</option>
+                <option>Petit (3 à 6 cm)</option>
+                <option>Moyen (6 à 10 cm)</option>
+                <option>Grand (plus de 10 cm)</option>
+                <option>Je ne sais pas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="refs">Références</label>
+            <input id="refs" name="refs" type="text" placeholder="Liens Pinterest, Instagram, ou une description">
+            <small>Pour les images, envoie-les en réponse à notre message.</small>
+          </div>
+
+          <div class="field">
+            <label for="availability">Tes disponibilités</label>
+            <input id="availability" name="availability" type="text" placeholder="En semaine, le samedi, plutôt en fin de journée…">
+          </div>
+
+          <div class="row-2">
+            <div class="field">
+              <label for="firstname">Prénom</label>
+              <input id="firstname" name="firstname" type="text" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email <span style="color:var(--muted);font-weight:500;">(facultatif)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
+          <p id="form-status" role="status" style="margin-top:1rem;color:var(--muted);font-size:0.92rem;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="logo.png" alt="Candy p.ink">
+        <p style="margin-top:1.2rem;">Tatouage fine line, floral et minimaliste à Lyon. Projets personnalisés et flashs du moment.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="tatouages.html">Tatouages</a></li>
+          <li><a href="flashs.html">Flashs</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="avis.html">Avis</a></li>
+          <li><a href="coulisses.html">Coulisses</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="https://instagram.com/barbieink.lyon" target="_blank" rel="noopener">@barbieink.lyon</a></li>
+          <li><span class="pending">Adresse à compléter</span></li>
+          <li><span class="pending">Horaires à compléter</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Candy p.ink · Lyon</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btnIdea = document.getElementById('btn-idea');
+  const btnFlash = document.getElementById('btn-flash');
+  const flashField = document.getElementById('flash-field');
+
+  function setMode(mode) {
+    const isFlash = mode === 'flash';
+    btnIdea.setAttribute('aria-pressed', String(!isFlash));
+    btnFlash.setAttribute('aria-pressed', String(isFlash));
+    flashField.hidden = !isFlash;
+  }
+  btnIdea.addEventListener('click', () => setMode('idea'));
+  btnFlash.addEventListener('click', () => setMode('flash'));
+
+  // Pré-sélection d'un flash depuis ?flash=NN (liens des cartes flash)
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('flash')) {
+    setMode('flash');
+    document.getElementById('flash').value = params.get('flash');
+  }
+
+  // Maquette : pas de serveur. L'envoi prépare un email prérempli.
+  // À remplacer par l'adresse réelle du studio, ou par un service de formulaire.
+  const STUDIO_EMAIL = 'contact@a-completer.example';
+
+  document.getElementById('request-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const status = document.getElementById('form-status');
+
+    if (!f.firstname.value.trim()) {
+      status.textContent = 'Ajoute au moins ton prénom pour que l\'on puisse te répondre.';
+      return;
+    }
+
+    const mode = btnFlash.getAttribute('aria-pressed') === 'true' ? 'Flash repéré' : 'Projet à construire';
+    const body = [
+      `Type de demande : ${mode}`,
+      f.flash.value ? `Flash : N°${f.flash.value}` : '',
+      `Projet : ${f.project.value}`,
+      `Zone : ${f.zone.value}`,
+      `Taille : ${f.size.value}`,
+      `Références : ${f.refs.value}`,
+      `Disponibilités : ${f.availability.value}`,
+      `Prénom : ${f.firstname.value}`,
+      `Email : ${f.email.value}`
+    ].filter(Boolean).join('\n');
+
+    const subject = encodeURIComponent('Demande depuis le site · ' + mode);
+    window.location.href = `mailto:${STUDIO_EMAIL}?subject=${subject}&body=${encodeURIComponent(body)}`;
+    status.textContent = 'Ton message est prêt dans ton application mail. Si rien ne s\'ouvre, écris-nous sur Instagram.';
+  });
+</script>
+<script src="fx.js" defer></script>
+</body>
+</html>
