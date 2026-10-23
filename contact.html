@@ -44,27 +44,19 @@
   <section>
     <div class="wrap grid-2" style="align-items:start;">
 
-      <aside>
-        <h2 style="font-size:1.9rem;">Infos pratiques</h2>
-
-        <p class="kicker" style="margin-top:1.4rem;">Instagram</p>
-        <p><a href="https://www.instagram.com/manuel_ink__/" target="_blank" rel="noopener" style="font-weight:700;">@manuel_ink__ (Manu Tattoo)</a></p>
-
-        <p class="kicker" style="margin-top:1.4rem;">Adresse</p>
-        <p><span class="pending">À compléter</span></p>
-        <p style="color:var(--muted);font-size:0.9rem;">L'adresse exacte sera affichée une fois vérifiée.</p>
-
-        <p class="kicker" style="margin-top:1.4rem;">Horaires</p>
-        <p><span class="pending">À compléter</span></p>
-
-        <p class="kicker" style="margin-top:1.4rem;">Email</p>
-        <p><span class="pending">À compléter</span></p>
-
-        <div class="note-box" style="margin-top:2rem;">
-          <h3>Bon à savoir</h3>
-          <p>Les demandes partent par message privé Instagram ou par le formulaire. Aucun paiement n'est demandé sur le site. Les tarifs et délais sont communiqués dans la réponse à ta demande.</p>
-        </div>
-      </aside>
+      <aside><h2 style="font-size:1.9rem;">Infos pratiques</h2>
+<p class="kicker" style="margin-top:1.4rem;">Instagram du studio</p>
+<p><a href="https://www.instagram.com/barbieink.lyon/" target="_blank" rel="noopener" style="font-weight:700;">@barbieink.lyon</a></p>
+<p class="kicker" style="margin-top:1.4rem;">Adresse · Accueil Phoenix Tattoo Studio</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=8+Rue+Joseph+Serlin+69001+Lyon" target="_blank" rel="noopener">8 rue Joseph Serlin, 69001 Lyon</a></p>
+<p class="kicker" style="margin-top:1.4rem;">Horaires de Phoenix Tattoo Studio</p>
+<p>Mardi au samedi : 10 h 30 – 19 h 30<br>Lundi et dimanche : fermé</p>
+<p class="kicker" style="margin-top:1.4rem;">Téléphone</p>
+<p><a href="tel:+33487783780">04 87 78 37 80</a></p>
+<p class="kicker" style="margin-top:1.4rem;">Email</p>
+<p><a href="mailto:contact@phoenixtattoostudio.fr">contact@phoenixtattoostudio.fr</a></p>
+<div class="note-box" style="margin-top:2rem;"><h3>Bon à savoir</h3><p>Le formulaire prépare un email dans ton application de messagerie : pense à confirmer son envoi. Tu peux aussi nous contacter directement sur Instagram. Taille, tarif et disponibilités sont précisés avec l'équipe.</p></div>
+</aside>
 
       <div class="form-shell">
         <h2 style="font-size:1.9rem;">Ma demande</h2>
@@ -182,10 +174,13 @@
       <div>
         <h3>Contact</h3>
         <ul>
-          <li><a href="https://www.instagram.com/manuel_ink__/" target="_blank" rel="noopener">@manuel_ink__ (Manu Tattoo)</a></li>
-          <li>Contact Phoenix Tattoo Studio : 8 rue Joseph Serlin, 69001 Lyon</li>
-          <li>Mardi au samedi : 10 h 30 – 19 h 30</li>
-        </ul>
+<li><a href="https://www.instagram.com/barbieink.lyon/" target="_blank" rel="noopener">@barbieink.lyon · Instagram du studio</a></li>
+<li>Accueil Phoenix Tattoo Studio</li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=8+Rue+Joseph+Serlin+69001+Lyon" target="_blank" rel="noopener">8 rue Joseph Serlin, 69001 Lyon</a></li>
+<li><a href="tel:+33487783780">04 87 78 37 80</a></li>
+<li><a href="mailto:contact@phoenixtattoostudio.fr">contact@phoenixtattoostudio.fr</a></li>
+<li>Mardi au samedi : 10 h 30 – 19 h 30 · Lundi et dimanche : fermé</li>
+</ul>
       </div>
     </div>
     <div class="footer-bottom">
@@ -216,9 +211,8 @@
     document.getElementById('flash').value = params.get('flash');
   }
 
-  // Maquette : pas de serveur. L'envoi prépare un email prérempli.
-  // À remplacer par l'adresse réelle du studio, ou par un service de formulaire.
-  const STUDIO_EMAIL = 'contact@a-completer.example';
+  // Site statique : prépare un email, sans envoi automatique.
+  const STUDIO_EMAIL = 'contact@phoenixtattoostudio.fr';
 
   document.getElementById('request-form').addEventListener('submit', (e) => {
     e.preventDefault();
