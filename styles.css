@@ -707,3 +707,20 @@ h2 .script, h1 .script { position: relative; white-space: nowrap; }
   .sticker-stage img, .fx-float, .btn::after { animation: none !important; }
   .grid-3 > .work { rotate: 0deg; }
 }
+
+/* Flash tattoo illustrations — fine line previews */
+.flash-illustration {
+  display: block;
+  width: min(79%, 260px);
+  height: 78%;
+  max-height: 295px;
+  color: var(--ink);
+  overflow: visible;
+  filter: drop-shadow(0 5px 0 rgba(53,33,46,.05));
+}
+.work-media:has(.flash-illustration) {
+  background: radial-gradient(circle at 38% 36%, #fff8fc 0%, #ffe6f2 76%, #ffd9ea 100%);
+}
+@media (max-width: 640px) {
+  .flash-illustration { width: min(72%, 245px); }
+}
